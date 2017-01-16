@@ -4,6 +4,7 @@
   "description": "A boilerplater for making an open source library",
   "main": "src/index.js",
   "scripts": {
+    "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,5 +24,9 @@
   "homepage": "https://github.com/kbeloborodko/open-source-library-boilerplate#readme",
   "dependencies": {
     "unique-random-array": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.13.1",
+    "eslint-config-kentcdodds": "^11.1.0"
   }
 }
