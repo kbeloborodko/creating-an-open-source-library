@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint src",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,9 @@
     "unique-random-array": "^1.0.0"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "eslint": "^3.13.1",
-    "eslint-config-kentcdodds": "^11.1.0"
+    "eslint-config-kentcdodds": "^11.1.0",
+    "mocha": "^3.2.0"
   }
 }
