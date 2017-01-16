@@ -9,7 +9,10 @@ describe('starwars-names', function () {
   });
 
   it('should allow me to return a random name from the list', function () {
-    expect(true).to.be.true;
+    expect(
+      openSourceLibrary.all.indexOf(openSourceLibrary.random()) > -1
+    )
+      .to.be.true;
   });
 });
 
