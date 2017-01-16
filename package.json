@@ -1,0 +1,24 @@
+{
+  "name": "open-source-library-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplater for making an open source library",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kbeloborodko/open-source-library-boilerplate.git"
+  },
+  "keywords": [
+    "open",
+    "source",
+    "boilerplate"
+  ],
+  "author": "Kirill Beloborodko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kbeloborodko/open-source-library-boilerplate/issues"
+  },
+  "homepage": "https://github.com/kbeloborodko/open-source-library-boilerplate#readme"
+}
