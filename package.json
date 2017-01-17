@@ -4,7 +4,7 @@
   "description": "A boilerplate for making an open source library",
   "main": "src/index.js",
   "scripts": {
-    "build": "babel --out-dir dist src",
+    "build": "babel --out-dir dist --ignore *.test.js src",
     "lint": "eslint src",
     "test": "nyc mocha",
     "watch:test": "mocha --watch",
