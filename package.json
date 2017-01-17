@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint src",
     "test": "nyc mocha",
-    "watch:test": "mocha --watch"
+    "watch:test": "mocha --watch",
+    "validate": "npm-run-all --parallel lint test"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,7 @@
     "eslint": "^3.13.1",
     "eslint-config-kentcdodds": "^11.1.0",
     "mocha": "^3.2.0",
+    "npm-run-all": "^4.0.1",
     "nyc": "^10.0.0"
   },
   "nyc": {
