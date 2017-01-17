@@ -9,7 +9,7 @@
     "lint": "eslint src",
     "test": "nyc mocha",
     "watch:test": "mocha --watch",
-    "validate": "npm-run-all --parallel lint test"
+    "validate": "npm-run-all --parallel lint test build"
   },
   "repository": {
     "type": "git",
