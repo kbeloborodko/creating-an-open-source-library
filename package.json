@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint src",
-    "test": "mocha",
+    "test": "nyc mocha",
     "watch:test": "mocha --watch"
   },
   "repository": {
@@ -30,6 +30,14 @@
     "chai": "^3.5.0",
     "eslint": "^3.13.1",
     "eslint-config-kentcdodds": "^11.1.0",
-    "mocha": "^3.2.0"
+    "mocha": "^3.2.0",
+    "nyc": "^10.0.0"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "branches": 100,
+    "functions": 100,
+    "lines": 100,
+    "statements": 100
   }
 }
