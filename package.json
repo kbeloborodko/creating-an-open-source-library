@@ -2,7 +2,7 @@
   "name": "open-source-library",
   "version": "1.0.0",
   "description": "A boilerplate for making an open source library",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "babel --copy-files --out-dir dist --ignore *.test.js src",
@@ -19,6 +19,9 @@
     "open",
     "source",
     "boilerplate"
+  ],
+  "files": [
+    "dist"
   ],
   "author": "Kirill Beloborodko",
   "license": "MIT",
