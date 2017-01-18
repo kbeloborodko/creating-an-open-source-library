@@ -1,3 +1,3 @@
 # Open Source Library Template
 - A project that serves as a boilerplate for an open source library, that includes webpack, npm scripts, unit tests, code coverage and more...
-- This project contains a list of Breaking Bad characters names, so you can use **all** property to get them all or **random** method to get one of them 
+- This project contains a list of Breaking Bad characters names, so you can use **all** property on a module to get a complete list or **random** method to get one random name at a time. Hope you enjoy the library! 
