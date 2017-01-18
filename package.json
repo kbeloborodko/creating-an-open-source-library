@@ -4,6 +4,7 @@
   "description": "Get a random name from Breaking Bad serial",
   "main": "dist/index.js",
   "scripts": {
+    "commit": "git-sz",
     "prebuild": "rimraf dist",
     "build": "npm-run-all --parallel build:main build:umd build:umd.min",
     "build:main": "babel --copy-files --out-dir dist --ignore *.test.js src",
@@ -45,7 +46,9 @@
     "babel-register": "^6.18.0",
     "chai": "^3.5.0",
     "codecov": "^1.0.1",
+    "commitizen": "^2.9.5",
     "cross-env": "^3.1.4",
+    "cz-conventional-changelog": "^1.2.0",
     "eslint": "^3.13.1",
     "eslint-config-kentcdodds": "^11.1.0",
     "ghooks": "^2.0.0",
@@ -55,8 +58,9 @@
     "npm-run-all": "^4.0.1",
     "nyc": "^10.0.0",
     "rimraf": "^2.5.4",
-    "webpack": "^1.14.0",
-    "semantic-release": "^6.3.2"
+    "semantic-release": "^6.3.2",
+    "validate-commit-msg": "^2.8.2",
+    "webpack": "^1.14.0"
   },
   "nyc": {
     "check-coverage": true,
@@ -90,8 +94,12 @@
     }
   },
   "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    },
     "ghooks": {
-      "pre-commit": "npm run validate"
+      "pre-commit": "npm run validate",
+      "commit-msg": "validate-commit-msg"
     }
   }
 }
