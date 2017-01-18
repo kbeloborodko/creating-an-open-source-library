@@ -1,6 +1,6 @@
 {
   "name": "breaking_bad_names",
-  "version": "1.1.0",
+  "version": "0.0.0-development",
   "description": "Get a random name from Breaking Bad serial",
   "main": "dist/index.js",
   "scripts": {
@@ -13,11 +13,12 @@
     "test": "cross-env NODE_ENV=test nyc mocha",
     "report-coverage": "minicat ./coverage/lcov.info | codecov",
     "watch:test": "mocha --watch",
-    "validate": "npm-run-all --parallel lint test build"
+    "validate": "npm-run-all --parallel lint test build",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kbeloborodko/open-source-library-boilerplate.git"
+    "url": "https://github.com/kbeloborodko/open-source-library-boilerplate.git"
   },
   "keywords": [
     "open",
@@ -54,7 +55,8 @@
     "npm-run-all": "^4.0.1",
     "nyc": "^10.0.0",
     "rimraf": "^2.5.4",
-    "webpack": "^1.14.0"
+    "webpack": "^1.14.0",
+    "semantic-release": "^6.3.2"
   },
   "nyc": {
     "check-coverage": true,
