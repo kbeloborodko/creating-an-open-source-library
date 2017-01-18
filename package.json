@@ -1,7 +1,7 @@
 {
-  "name": "open-source-library",
+  "name": "breaking_bad_names",
   "version": "1.0.0",
-  "description": "A boilerplate for making an open source library",
+  "description": "Get a random name from Breaking Bad serial",
   "main": "dist/index.js",
   "scripts": {
     "prebuild": "rimraf dist",
